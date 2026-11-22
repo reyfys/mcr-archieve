@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0a0c"><meta name="description" content="A personal, offline-ready My Chemical Romance lyric archive.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon.svg">
+<link rel="stylesheet" href="styles.css"><title>MCR Archive — Every song has a story</title>
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar"><a class="wordmark" href="#" aria-label="MCR Archive home"><span class="sigil">M</span><span>MCR<span class="muted"> / ARCHIVE</span></span></a><div class="top-actions"><span id="offlineStatus" class="status"><i></i> READY</span><button id="installBtn" class="icon-btn" hidden>＋ INSTALL</button></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">A PERSONAL LYRIC LIBRARY · EST. 2001</p><h1>EVERY SONG<br>HAS A <em>STORY.</em></h1><p class="hero-sub">A home for every era of My Chemical Romance.<br>Browse the records. Keep your words close.</p><div class="hero-meta"><span>01 — 04 / STUDIO RECORDS</span><span>✳ OFFLINE-READY</span></div></div><div class="hero-art"><div class="hero-stamp">MCR<br>ARCHIVE</div><div class="hero-lines"></div><p>LONG LIVE<br>THE BLACK<br>PARADE.</p></div></section>
+<section class="toolbar"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search songs or albums..." autocomplete="off"></label><button id="savedFilter" class="filter-btn">♡ SAVED <b id="savedCount">0</b></button></section>
+<section class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>THE DISCOGRAPHY<span class="red-dot">.</span></h2></div><span class="count" id="trackCount"></span></section>
+<div id="albumGrid" class="album-grid"></div>
+<section class="special-wrap"><div class="special-card"><div class="special-copy"><p class="eyebrow">A PERSONAL ARCHIVE · 2025</p><h2>BLACK PARADE<br><em>TOUR SETLIST</em></h2><p>Twenty songs, in the exact order from your screenshot.</p><button id="openSpecial" class="outline-btn">OPEN SETLIST <span>↗</span></button></div><div class="special-visual"><span>THE</span><strong>BLACK<br>PARADE</strong><small>2025 · LIVE</small></div></div></section>
+<section class="offline-note"><span class="offline-icon">↓</span><div><h3>TAKE THE ARCHIVE OFFLINE</h3><p>The site shell works offline after your first visit. Add your own lyric text to a song and save it on this device for offline reading.</p></div></section>
+<footer><span>MCR / ARCHIVE</span><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH THE BAND</span></footer>
+</main>
+<div id="drawer" class="drawer" aria-hidden="true"><div class="drawer-backdrop" id="closeDrawer"></div><article class="drawer-panel"><div class="drawer-top"><span class="eyebrow" id="drawerAlbum">ALBUM / TRACK</span><button id="closeX" class="icon-btn">✕</button></div><div class="drawer-scroll"><p class="track-index" id="trackIndex">TRACK 01</p><h2 id="drawerTitle">Song title</h2><p class="drawer-sub" id="drawerSub"></p><div class="drawer-actions"><button id="bookmarkBtn" class="outline-btn">♡ SAVE SONG</button><a id="lyricsSearch" class="outline-btn" target="_blank" rel="noopener">FIND LYRICS ↗</a></div><div class="lyrics-area"><div class="lyrics-head"><span>YOUR LYRICS</span><span id="lyricState">NOT SAVED</span></div><textarea id="lyricsInput" placeholder="Paste lyrics you have permission to use here. Save them on this device to read offline..."></textarea><div class="lyrics-actions"><button id="saveLyrics" class="solid-btn">SAVE FOR OFFLINE</button><button id="clearLyrics" class="text-btn">CLEAR</button></div><p class="tiny-note">Lyrics are stored locally in this browser. They are not uploaded to a server. Use the official or licensed lyric source for text you don't own.</p></div></div></article></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
